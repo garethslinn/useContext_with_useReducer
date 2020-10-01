@@ -25,6 +25,3 @@ yarn start
 yarn run css:watch
 ```
 
-
-
-# useContext_with_useReducer

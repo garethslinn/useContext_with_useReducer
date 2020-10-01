@@ -1,4 +1,4 @@
-# Example app using useContext with useReducers
+# Example app using useContext with useReducer
 
 ```sh
 I have typically used redux for state management but useContext brings

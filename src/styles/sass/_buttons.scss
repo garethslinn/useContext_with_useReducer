@@ -1,0 +1,51 @@
+/* buttons */
+button:disabled {
+    background: $grey;
+}
+
+.button {
+  background: $green;
+  border: 3px solid $white;
+  width:30px;
+  height:30px;
+  border-radius:100%;
+  position:relative;
+  margin:4px;
+  display:inline-block;
+  vertical-align:middle;
+  cursor: pointer;
+
+    &.add:before,
+    &.add:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:$white;
+    }
+    &.add:before{
+        width: 2px;
+        margin: 2px auto;
+    }
+    &.add:after{
+        margin: auto 2px;
+        height: 2px;
+    }
+    &.remove {
+        background-color: $red;
+    }
+    &.remove:before{
+        background: $white;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto 2px;
+        height: 2px;
+    }
+}
+

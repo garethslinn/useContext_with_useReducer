@@ -12,8 +12,9 @@ const ItemList = () => {
       <ul>
         {members.people.map((item) => {
           return (
-                  <li key={item.id} className="item item-wrapper">{item.name}
+                  <li data-testid="listItem" key={item.id} className="item item-wrapper">{item.name}
                       <button 
+                        data-testid="removeButton"
                         className="button remove" 
                         onClick={() => removeItem(item.id)}>
                       </button>

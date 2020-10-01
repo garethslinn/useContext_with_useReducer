@@ -34,7 +34,7 @@ const AddItem = () => {
           type='text' 
           ref={ref} 
           onChange={handleChange} 
-          maxlength='30'
+          maxLength='30'
           value={value} />
           <button className="button add" disabled={disabled}></button>
         </form>

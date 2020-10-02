@@ -31,12 +31,14 @@ const AddItem = () => {
       <div>
         <form className="item-add-container item-wrapper" onSubmit={handleSubmit}>
           <input 
-          type='text' 
-          ref={ref} 
-          onChange={handleChange} 
-          maxLength='30'
-          value={value} />
-          <button className="button add" disabled={disabled}></button>
+            data-testid="inputItem"
+            type='text' 
+            ref={ref} 
+            onChange={handleChange} 
+            maxLength='30'
+            value={value} 
+          />
+          <button data-testid="addButton" className="button add" disabled={disabled}></button>
         </form>
       </div>
     );

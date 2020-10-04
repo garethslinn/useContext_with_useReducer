@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { getByTestId } from '@testing-library/dom'
 import App from '../App';
 
 const setup = () => {

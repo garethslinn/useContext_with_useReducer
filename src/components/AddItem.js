@@ -2,7 +2,7 @@ import React, { useState, useContext, useRef, useEffect } from 'react';
 import Context from '../context';
 
 const AddItem = () => {
-    const { state, dispatch } = useContext(Context);
+    const { dispatch } = useContext(Context);
     const [value, setValue] = useState('');
     const [disabled, setDisabled] = useState(true);
   

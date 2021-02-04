@@ -12,7 +12,7 @@ const Counter = () => {
 
   return (
     <React.Fragment>
-        <div data-testid="count" className="count">{ count } item(s)</div>
+        <div className="count"><span data-testid="count">{ count } </span>item(s)</div>
     </React.Fragment>
   );
 }

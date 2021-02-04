@@ -7,6 +7,8 @@ import Context from './context';
 import NameReducer from './reducers/itemReducer';
 import useCombinedReducers from 'use-combined-reducers';
 import UserReducer from './reducers/userReducer';
+import { ContextDevTool } from 'react-context-devtool';
+
 import { TITLE } from './constants/global';
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
           <ItemList />
           <AddItem />
       </div>
+      <ContextDevTool context={Context} id="uniqContextId" displayName="Context Display Name" />
     </Context.Provider>
   );
 }
